@@ -483,6 +483,7 @@ justify-content: end;
 }
 .curriculum .fila .item p{
   line-height: 24px;
+  max-width: 410px;
 }
 .curriculum .fila .izq{
   border-right: 2px solid #1cb698;
