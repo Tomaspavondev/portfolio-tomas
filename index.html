@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/4c2ce43b58.js" crossorigin="anonymous"></script>
+    <title>Tomas Pavon Dev.</title>
+  </head>
+  <body>
+    <!--Contenedor suplente de body, tiene fondo-->
+    <div class="fondo">
+      <!--Filtro para desenfoque de bg-->
+      <div class="fondo-desenfocado"></div>
+      <!--Header, contiene la barra de nav y logo-->
+        
+        <header>
+          <!--Contenedor de Logo-->
+          <div  id="inicio" class="logo">
+            <a href="#">
+              <!--Logo-->
+              <img src="/imgs/logo.png" alt="Tomas Logo" />
+            </a>
+          </div>
+          <!--Barra de Navegacion-->
+          <nav id="nav">
+            <!--Lista para navegacion-->
+            <ul>
+              <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+              <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+              <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+              <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+              <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+              <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+          </nav>
+          
+        </header>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      <!--Fin de Header-->
+      <!--Contenedor de carta-->
+      <section class="inicio">
+      <div class="card-cont">
+        <!--Carta de presentacion central-->
+        <div class="presentation-card">
+          <!--Contenedor de foto tipo circular-->
+          <div class="foto-container">
+            <img src="/imgs/FOTO-CV.png" alt="Foto Presentacion" class="foto" />
+          </div>
+          <!--Nombre, Apellido y profesion-->
+          <article>
+            <h1 class="nombre">Tomás Pavón</h1>
+            <h4 class="rol">Programador Web Front-end</h4>
+          </article>
+          <!--Footer donde adjuntar Redes Sociales, Linkedin, Git, etc-->
+          <footer class="card-footer">
+            <!--Contenedor de redes sociales, parte baja de la carta-->
+            <div class="rrss-cont">
+              <a target="_blank" href="https://www.linkedin.com/in/tomaspavonok/"><img src="/imgs/linkedin.png" alt="Linkedin" /></a>
+              <a href="#" onclick="abrirCorreo()"><img src="/imgs/gmail.png" alt="Gmail" /></a>
+              <a target="_blank" href="https://github.com/Tomaspavondev"><img src="/imgs/github.png" alt="GitHub" /></a>
+            </div>
+          </footer>
+        </div>
+        <!--Fin de Carta presentacion-->
+      </div>
+    </section>
+
+
+      <!--Contenedor sobre mi-->
+      <div id="sobremi" class="sobre-mi">
+        <br><br><br><br>
+        <article class="sobre-mi-art">
+          <h1>SOBRE MÍ</h1>
+          <p>Hola soy Tomás Pavón, desarrollador y diseñador Web, soy un apasionado por el mundo digital y tecnologico, actualmente me encuentro trabajando como Freelancer, realizando proyectos propios y para clientes. Mi gran interes por seguir aprendiendo y desarrollando mis habilidades como diseñador web me impulsan a seguir tomando cursos y seguir aprendiendo el manejo de nuevas tecnologias constantemente.</p>
+          <!--Datos personales e Intereses, contenedor-->
+          <div class="datos-intereses">
+            <!--Datos personales y de contacto-->
+          <ul class="datos-personales">
+            <!--Datos color cyan-->
+          <div class="datos-person-div">
+            <h2>Datos Personales</h2>
+            <li><p>Email:</p></li>
+            <li><p>Telefono:</p></li>
+            <li><p>Cargo:</p></li>
+            <li><p>Residencia:</p></li>
+          </div>
+          <!--Datos de contacto detalle-->
+          <div class="ul-aside">
+            <span>pavonx8@gmail.com</span>
+            <span>+5492964479574</span>
+            <span>Programador Web</span>
+            <span>Cordoba, Argentina</span>
+          </div>
+        </ul>
+        <!--Mis intereses y hobbies-->
+          <aside class="sobre-mi-aside">
+            <h2>Mis Intereses</h2>
+            <div class="cont-intereses">
+              <div class="interes">
+                <i class="fa-regular fa-futbol"></i>
+                <span>FUTBOL</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>              
+                <span>PROGRAMACIÓN</span></div>
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>              
+                <span>JUEGOS</span></div>
+              <div class="interes">
+                <i class="fa-solid fa-camera-retro"></i>              
+                <span>EDICIÓN</span></div>
+              <div class="interes">
+                <i class="fa-solid fa-music"></i>              
+                <span>MUSICA</span></div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>             
+                <span>LIBROS</span></div>
+            </div>
+          </aside>
+        </div>
+        </article>
+        <!--Descarga de Curriculum-->
+        <a href="imgs\Curriculum Tomas Pavon.pdf" download="Curriculum Tomas Pavon.pdf">
+        <button>Descargar CV<i class="fa-solid fa-download"></i>
+          <!--Efecto de carga sobre boton-->
+          <span class="overlay"></span>
+        </button></a>
+      </div>
+
+
+      <!-- SECCION DE HABILIDADES -->
+      
+      <section id="habilidades" class="habilidades">
+        <div class="contenido-seccion">
+          <br><br>
+          <h2>HABILIDADES</h2>
+          <div class="fila">
+            <!--Habilidades tecnicas-->
+            <div class="col">
+              <h3>Habilidades Tecnicas</h3>
+              <div class="habilidad">
+                <span>Javascript</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>HTML</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>90%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>CSS</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>React.js</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Tailwind CSS</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Responsive Design</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Habilidades blandas-->
+            <div class="col">
+              <h3>Habilidades Blandas</h3>
+              <div class="habilidad">
+                <span>Comunicacion</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>95%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Trabajo en equipo</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Creatividad</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Proactividad</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Gestion Emocional</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="habilidad">
+                <span>Autodidacta</span>
+                <div class="barra-habilidad">
+                  <div class="progreso">
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <h3>Tecnologias</h3>
+            <div class="fila">
+              <i title="Javascript" class="fa-brands fa-js"></i>
+            <i title="HTML5" class="fa-brands fa-html5"></i>
+            <i title="CSS3" class="fa-brands fa-css3-alt"></i>
+            <i title="React.js" class="fa-brands fa-react"></i>
+          </div>
+          <div class="fila">
+            <i title="Bootstrap" class="fa-brands fa-bootstrap"></i>
+            <i title="Databases" class="fa-solid fa-database"></i>
+            <i title="GIT" class="fa-brands fa-git-alt"></i>
+            <i title="GitHub" class="fa-brands fa-github"></i>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--SECCION DE CURRICULUM-->
+      <section id="curriculum" class="curriculum">
+        <h2>CURRICULUM</h2>
+          <div class="contenido-seccion">
+            <div class="fila">
+              <div class="col izquierda">
+                <h3>Educacion</h3>
+              <div class="item izq">
+                <h4>Escuela Secundaria</h4>
+                <span class="casa">Escuela Agrotecnica Mision Salesiana</span>
+                <span class="fecha">2013-2020</span>
+                <p></p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Auxiliar en Programación</h4>
+                <span class="casa">Instituto Superior Teclab</span>
+                <span class="fecha">Graduado, 2023</span>
+                <p></p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Tecnicatura Superior en Programación</h4>
+                <span class="casa">Instituto Superior Teclab</span>
+                <span class="fecha">2022-En curso</span>
+                <p></p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Tecnicatura en Ciencia de Datos e Inteligencia Artificial</h4>
+                <span class="casa">Instituto Politecnico Malvinas Argentinas</span>
+                <span class="fecha">2024-En curso</span>
+                <p></p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="fila">
+        <div class="col derecha">
+          <h3>Experiencia</h3>
+          <div class="item der">
+            <h4>Front-end Developer</h4>
+            <span class="casa">Compañia</span>
+            <span class="fecha">2023</span>
+            <p></p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Front-end Developer</h4>
+            <span class="casa">Compañia</span>
+            <span class="fecha">2024</span>
+            <p></p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      <!--SECCION DE PROYECTOS-->
+      <section id="proyectos" class="portfolio">
+        <div class="contenido-seccion">
+          <h2>PORTFOLIO</h2>
+          <div class="galeria">
+            <div class="proyecto">
+              <img src="/imgs/pokemon.png" alt="">
+              <div class="overlay">
+                <h3>Programación</h3>
+                <p>Diseño WEB</p>
+              </div>
+            </div>
+            <div class="proyecto">
+              <img src="/imgs/kfc.png" alt="">
+              <div class="overlay">
+                <h3>Programación</h3>
+                <p>Diseño WEB</p>
+              </div>
+            </div>
+            <div class="proyecto">
+              <img src="/imgs/charizard.png" alt="">
+              <div class="overlay">
+                <h3>Programación CSS</h3>
+                <p>Diseño</p>
+              </div>
+            </div>
+            <div class="proyecto">
+              <img src="/imgs/Calculadora.png" alt="">
+              <div class="overlay">
+                <h3>Programación Javascript</h3>
+                <p>Web App</p>
+              </div>
+            </div>
+            <div class="proyecto">
+              <img src="/imgs/Calorias.png" alt="">
+              <div class="overlay">
+                <h3>Programación Javascript</h3>
+                <p>Web App</p>
+              </div>
+            </div>
+            <div class="proyecto">
+              <img src="/imgs/tareas.png" alt="">
+              <div class="overlay">
+                <h3>Programación Javascript</h3>
+                <p>Web App</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION DE CONTACTO-->
+      <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+          <br>
+          <h2>CONTACTO</h2>
+          <div class="fila">
+            <!-- FORMULARIO -->
+            <div class="col">
+              <input type="text" placeholder="Tu Nombre">
+              <input type="text" placeholder="Numero telefonico">
+              <input type="text" placeholder="Dirección de correo">
+              <input type="text" placeholder="Tema">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+              </button>
+            </div>
+            <!-- MAPA -->
+            <div class="col">
+              <img src="/imgs/ubicacion.png" alt="">
+              <div class="info">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Córdoba, Argentina
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Llamanos: +54 9 2964-479574
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    Email: pavonx8@gmail.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          <!-- footer -->
+    <footer class="foot">
+      <a href="#inicio" class="arriba">
+          <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+          <a target="_blank" href="https://github.com/Tomaspavondev"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/tomaspavonok/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=pavonx8@gmail.com"><i class="fa-solid fa-inbox"></i></a>
+          
+      </div>
+  </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
